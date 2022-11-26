@@ -18,19 +18,17 @@ db.once('open', () => {
 await Project.deleteMany()
 
 const projectExample = await Project.create({
+   
     title: 'Example',
     description: 'lorem isp',
     screenshots: 'currently no image available',
-    frontend: [{
-        utilised: true,
-        language: 'JS Vanilla',
-        symbol: 'JS'
-    }],
-    backend: [{
-        utilised: true,
-        language: 'SQL',
-        symbol: 'SQL'
-    }]
+    hasFrontend: true,
+    frontLanguage: 'JS Vanilla',
+    frontSymbol: 'JS',
+    hasBackend: true,
+    backLanguage: 'SQL',
+    backSymbol: 'SQL'
+
 }); 
 
 console.log(projectExample);

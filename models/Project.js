@@ -9,16 +9,12 @@ const projectSchema = new mongoose.Schema({
     title: String,
     description: String,
     screenshots: String,
-    frontend: [{
-        utilised: Boolean,
-        language: String,
-        symbol: String
-    }],     //  frontend details
-    backend: [{
-        utilised: Boolean,
-        language: String,
-        symbol: String
-    }]     //  backend details
+    hasFrontend: Boolean,
+    frontLanguage: String,
+    frontSymbol: String,
+    hasBackend: Boolean,
+    backLanguage: String,
+    backSymbol: String
 
 });          //  projectSchema
 
