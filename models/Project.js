@@ -5,6 +5,7 @@ const projectSchema = new Schema({
 
     title: String,
     description: String,
+    screenshots: String,
     frontend: [{
         utilised: Boolean,
         language: String,
@@ -14,6 +15,11 @@ const projectSchema = new Schema({
         utilised: Boolean,
         language: String,
         symbol: String
-    }],     //  backend details
+    }]     //  backend details
 
-})          //  projectSchema
+});          //  projectSchema
+
+const Project = model('Project', projectSchema);
+
+export default Project;
+
