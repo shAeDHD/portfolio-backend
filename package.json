@@ -8,6 +8,8 @@
     "start": "nodemon server.js",
     "db:seed": "node models/seeds.js"
   },
+  "type": "module",
+
   "keywords": [],
   "author": "",
   "license": "ISC",
