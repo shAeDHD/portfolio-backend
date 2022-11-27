@@ -39,8 +39,8 @@ app.get('/projects', async (req, res) => {
 
 })      //  close app.get('/projects')
 
-//      Search route for projects according to languages used in projects 
 // TODO - configure front end params routes
+//      Search route for projects according to languages used in projects 
 // app.get('/projects/search/:frontEnd/:backEnd', async (req, res) => {
 
 //     try {
