@@ -1,8 +1,6 @@
 // Model for containing data relevant to projects that have been
 //  worked on. 
-
-import mongoose from 'mongoose';
-const { Schema, model } = mongoose;
+const mongoose = require('mongoose')
 
 const projectSchema = new mongoose.Schema({
 
@@ -18,6 +16,6 @@ const projectSchema = new mongoose.Schema({
 
 });          //  projectSchema
 
-const Project = model('Project', projectSchema);
+const model = mongoose.model('Project', projectSchema);
 
-export default Project;
+module.exports = model;
