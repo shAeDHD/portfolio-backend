@@ -42,6 +42,6 @@ db.once('open', async () => {
 
     ]); 
     console.log(`created examples`, projectExamples);
-    process.exit( 0 );  //  exit the program
+    // process.exit( 0 );  //  exit the program
 
 })  //  close db.on(error) 
